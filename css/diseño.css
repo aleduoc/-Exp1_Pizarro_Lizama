@@ -1,42 +1,102 @@
 
-body{background-color: darkred;}
-#menu{width: 100%; height: 70px; background-color: red;}
-#logo img{width: 70px; height: 70px; float: left;}
+
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: #efefef;
+}
+
+header {
+    background-color: #071a2b;
+    color: white;
+    padding: 1rem;
+}
+header menu{
+    float: left;
+}
+#menu a{
+    text-decoration: none;
+    margin-left: 1rem;
+    color: #efefef;
+}
+
+header h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.container {
+    width: 400px;
+    margin: 0 auto;
+}
+
+section article {
+    background-color: white;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    padding: 0.25rem 0;
+}
+
+section article h2 {
+    text-align: center;
+    margin: 1rem;
+}
+
+.p1 {
+    text-align: center;
+}
+
+section article p {
+    margin: 1rem;
+}
+
+footer {
+    background-color: #071a2b;
+    padding: 1.5rem;
+    color: white;
+}
 
 
-#cont{background-color: whitesmoke; text-align: center;margin-top: 1rem;}
-#cont h1{text-shadow: 3px 2px 7px; }
+#contexto{
+    height: 18rem;
+    background-color: darkblue;
+    
+    
+}
+.parrafos p{
+    width: 28%;
+    float: left;
+    margin-left: 1%;
+    color: #efefef;
 
-#barramenu li{
-     float: left; 
-     margin-left: 1.5rem; margin-top: 1rem;
-     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-     font-size: large;
-     list-style-image: url("iconomenu.png") ;
-     color: black;
-    }
+}
 
-li:hover{cursor: pointer;}
+
+.imag img{
+    width: 20%;
+    height: 17.5rem;
+    float: left;
+    border-radius: 10px;
+    box-shadow: 4px 8px 8px;
+
+
+}
+
+
 
 .carousel-inner img {
-    margin: auto;
-    height: 26rem;
-    border: solid red 5px;
-    border-radius: 15px; 
+    height: 30rem;
+    border: solid blue 2px;
     width: 100%;
-    
-    
 }
 
 
-#carouselExample{background-color:gray}
 
-.carousel-inner{
- height: 31rem;
- margin:  auto;
- padding: 2.5rem;
- width: 100%;
-}
 
-.carousel-control-next-icon{ border-radius: 13px; background-color: black;}
-.carousel-control-prev-icon{ border-radius: 13px; background-color: black;}
+
+
+.carousel-control-next-icon{ border-radius: 13px; background-color: black; }
+.carousel-control-prev-icon{ border-radius: 13px; background-color: black; }
