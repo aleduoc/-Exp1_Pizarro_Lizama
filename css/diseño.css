@@ -1,8 +1,5 @@
 
 
-html {
-    font-family: 'Montserrat', sans-serif;
-}
 
 body {
     margin: 0;
@@ -17,6 +14,9 @@ header {
 header menu{
     float: left;
 }
+
+
+
 #menu a{
     text-decoration: none;
     margin-left: 1rem;
@@ -26,10 +26,20 @@ header menu{
 header h1 {
     font-size: 3rem;
     text-align: center;
+    text-shadow: #0e0e0f 6px 8px 7px ;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+    animation: parpadea 2s linear infinite;
 }
+@keyframes parpadea {
+    0% {text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;}
+    50% {text-shadow: none;}
+    100% {text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;}
+  }
 
 .container {
-    width: 400px;
+    width: 424px;
     margin: 0 auto;
 }
 
@@ -38,6 +48,10 @@ section article {
     margin: 1rem 0;
     border-radius: 0.5rem;
     padding: 0.25rem 0;
+    cursor: pointer;
+}
+section article:hover {
+    box-shadow: 0 0.1rem 0.3rem #0e0e0f;
 }
 
 section article h2 {
@@ -59,10 +73,55 @@ footer {
     color: white;
 }
 
+footer section {
+    float: right;
+}
+
+footer p {
+    font-size: calc(0.5em + 0.5vw);
+    
+}
+
+#redes{
+    margin-bottom: 1em;
+}
+
+#f{ position: relative;
+    float: left;
+    left: 30%;
+    font-size: calc(1em + 0.5vw);
+ 
+}
+
+#i{ position: relative;
+    float: right;
+    right: 30%;
+    font-size: calc(1em + 0.5vw);
+ 
+}
+
+footer a {
+    transition: color 0.3s ease;
+    color: white;
+    text-decoration: none;
+    margin-left: 0.5rem;
+    font-size: calc(0.5em + 0.5vw);
+}
+
+footer a:hover {
+    color: rgb(84, 126, 203);
+}
+
+div article {
+    margin: 1rem;
+}
 
 #contexto{
-    height: 18rem;
+    padding-top: 1em;
+    height: 26em;
     background-color: darkblue;
+
+
     
     
 }
@@ -71,8 +130,11 @@ footer {
     float: left;
     margin-left: 1%;
     color: #efefef;
-
+    font-size: calc(0.5em + 0.5vw);
+    text-shadow: #0e0e0f 6px 8px 7px ;
 }
+
+
 
 
 .imag img{
@@ -81,21 +143,29 @@ footer {
     float: left;
     border-radius: 10px;
     box-shadow: 4px 8px 8px;
-
-
 }
 
+#info {
+
+    box-shadow: 4px 8px 8px;
+    padding: 1em;
+    
+}
+
+#info p{
+    text-align: center;
+    font-size: large;
+    color: #071a2b;
+    font-style: italic;
+
+}
 
 
 .carousel-inner img {
-    height: 30rem;
+    height: 35rem;
     border: solid blue 2px;
     width: 100%;
 }
-
-
-
-
 
 
 .carousel-control-next-icon{ border-radius: 13px; background-color: black; }
